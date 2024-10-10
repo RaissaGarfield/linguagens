@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Java</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Linguagens de programação</a>
+        <br>
+        <a href="tinkercad.html">Tinkercad</a>
+        <br>
+        <a href="C++.html">C++</a>
+        <br>
+        <a href="java.html">Java</a>
+    </nav>
+    </nav>
+    <br>
+    <h1>
+Línguagem de programação Java
+    </h1>
+    <br>
+   <p>
+    A programação orientada a objetos (OOP) é uma das maiores vantagens do Java. Esta é a razão pela qual essa linguagem ganhou popularidade e é apropriada para projetos de qualquer dimensão. OOP se refere à construção do seu software. Trata-se de um conceito, ou melhor, uma série de conceitos oop em Java, que possibilitam a criação de interações e relações específicas entre objetos Java para a criação e utilização eficiente de software. 
+    <br>
+    Java é uma linguagem de programação orientada a objetos, multiplataforma, utilizada em bilhões de aparelhos ao redor do globo. Ele habilita aplicativos, sistemas operacionais de smartphones, softwares de negócios e diversos programas famosos.
+   </p>
+   <br>
+   <h2>
+    Print de tela de um código Java 
+   </h2>
+   <br>
+   <div>
+    <img src="javaprint.jpg" alt="Exemplo de Print de tela de um código Java">
+    <br>
+    <small>
+        Fonte: Autor
+    </small>
+    <br>
+    <h2>
+        Exemplo de código java em texto
+    </h2>
+    <br>
+    <p>
+        <pre>
+            import java.util.Scanner;
+
+public class programa04 {
+   public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+
+        int pot1 = 0, pot2 = 0, res = 0;
+       boolean led = false;
+
+       System.out.print("Digite o valor do sensor potenciômetro 1: ");
+       pot1 = sc.nextInt();
+       System.out.print("Digite o valor do sensor potenciômetro 2: ");
+       pot2 = sc.nextInt();
+
+       if(pot1 > pot2){
+           res += pot1 + pot2;
+           System.out.printf(" A resposta é: %d ",res);
+           led = true;
+       }else{
+           led = false;
+       }
+
+
+      sc.close();
+   }
+}
+        </pre>
+    </p>
+</body>
+</html>

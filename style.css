@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    background-color: #df7284;
+}
+nav{
+    color: #a82977;
+}
+h1{
+color: #ffd5e8
+;
+font-size: 36px;
+text-decoration: overline underline line-through;
+}
+h2{
+    color: #a72e7b;
+    font-size: 30px;
+    text-decoration: underline;
+}
+p{
+    color: #dbc4cb;
+    font-size: 23px;
+}
+div img{
+    color: #c0427f;
+    border-radius: 23px;
+    border-style: dotted;
+}
+div small{
+    color: #a82977;
+    text-decoration: none;
+}
+div a:link{
+    color: #a82977;
+    text-decoration: none;
+}

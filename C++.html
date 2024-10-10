@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>C++</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Linguagens de programação</a>
+        <br>
+        <a href="tinkercad.html">Tinkercad</a>
+        <br>
+        <a href="C++.html">C++</a>
+        <br>
+        <a href="java.html">Java</a>
+    </nav>
+    <br>
+    <h1>
+Linguagens de Programação C++
+    </h1>
+    <br>
+    <h2>
+        O que é
+    </h2>
+    <br>
+    <p>
+      C++ é uma linguagem de programação de nível superior e de uso geral. Ela surgiu como uma extensão para a linguagem C, oferecendo funcionalidades extras, como suporte para programação orientada a objetos.
+      Desde os anos 1990 é uma das linguagens comerciais mais populares, sendo bastante usada também na academia por seu grande desempenho e base de utilizadores.
+    </p>
+    <br>
+    <h2>
+      Exemplo de código C++ na IDE ARDUÍNO
+    </h2>
+    <div>
+        <img src="c++idearduino.jpg" alt="Exemplo de código C++ na IDE ARDUÍNO">
+        <br>
+        <small>
+            Fonte: Autor
+        </small>
+        <br>
+        <h2>
+           Código C++ da IDE ARDUÍNO por escrito
+        </h2>
+    <p>
+<pre>
+    // C++ code
+int pot1 = 0, pot2 = 0, res = 0;
+void setup()
+{
+  pinMode(A0, INPUT);
+  Serial.begin(9600);
+  pinMode(A1, INPUT);
+  pinMode(12, OUTPUT);
+
+  pot1 = 0;
+  pot2 = 0;
+  res = 0;
+  digitalWrite(12, LOW);
+}
+
+void loop()
+{
+  pot1 += analogRead(A0);
+  Serial.println("pot 1..............................");
+  Serial.println(pot1);
+  pot2 += analogRead(A1);
+  Serial.println("pot 2-----------------------------------");
+  Serial.println(pot2);
+  if (pot1 > pot2) {
+    res += (pot1 + pot2);
+    Serial.println("-----------------------------------");
+    Serial.println(res);
+    digitalWrite(12, HIGH);
+  } else {
+    digitalWrite(12, LOW);
+  }
+  delay(1); // Wait for 1 millisecond(s)
+}
+</pre>
+</body>
+</html>
